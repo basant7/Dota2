@@ -1,0 +1,1085 @@
+.heroPage_UpperSection {
+  width: 100%;
+  min-height: 115vh;
+  /* min-height: 700px; */
+  padding: 40px 100px 0px 140px;
+  background-position-x: -20vw;
+  background-color: #000;
+  background-image: url('../../../assets/images/heroes_page/greyfade.jpg');
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+
+.heroPage_UpperSection .heropage_BackgroundGradient {
+  width: 150%;
+  height: 110vh;
+  background-color: #00000060;
+  position: absolute;
+  transform: skewY(-45deg) translateX(-50vw);
+  overflow: hidden;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: heropage_BarIn;
+}
+
+@keyframes heropage_BarIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.heroPage_UpperSection .heropage_HeroNavigator {
+  width: 10vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  top: 30vh;
+  right: 2vw;
+  z-index: 4;
+}
+.heroPage_UpperSection .heropage_HeroNavigator .heropage_NavigatorArrow {
+  width: 30px;
+  height: 64px;
+  border: 2px solid #fff;
+  position: relative;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.1s;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.heroPage_UpperSection .heropage_HeroNavigator .heropage_CenterGrid {
+  width: 80px;
+  height: 64px;
+  border: 2px solid #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.1s;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.heroPage_UpperSection .heropage_HeroNavigator .heropage_CenterGrid:hover,
+.heroPage_UpperSection .heropage_HeroNavigator .heropage_NavigatorArrow:hover {
+  opacity: 1;
+}
+.heroPage_UpperSection .heropage_HeroNavigator .heropage_CenterGrid .heropage_GridDot {
+  width: 1rem;
+  height: 1rem;
+  background-color: #fff;
+}
+.heroPage_UpperSection .heropage_HeroNavigator .heropage_Right {
+  transform: rotate(180deg);
+}
+
+.heroPage_UpperSection .heropage_HeroPortraitContainer {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  top: 5%;
+  right: -5%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  pointer-events: none;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: heropage_PortraitIn_3wy5B;
+}
+@keyframes heropage_PortraitIn_3wy5B {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.heroPage_UpperSection .heropage_HeroPortraitContainer .heropage_HeroPortrait {
+  width: 100%;
+  min-height: 100%;
+  max-width: 1500px;
+  -webkit-mask-image: linear-gradient(to top, transparent 10%, black 50%);
+  mask-image: linear-gradient(to top, transparent 10%, black 50%);
+}
+
+/* Hero description  */
+
+.heroPage_UpperSection .heropage_HeroSummary {
+  margin-top: 100px;
+  margin-left: 30px;
+  width: 40%;
+  height: calc(90% - 100px);
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: heropage_heroInfoIn_2pSnE;
+}
+.heropage_HeroSummary .heropage_HeroTypeTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.heropage_HeroSummary .heropage_HeroTypeTitle .heropage_PrimaryStatIcon {
+  width: 32px;
+  height: 32px;
+}
+.heropage_HeroSummary .heropage_HeroTypeTitle .heropage_PrimaryStat {
+  margin-left: 6px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 100;
+  font-size: 24px;
+}
+.heropage_HeroSummary .heropage_HeroName {
+  margin-top: 12px;
+  font-family: Reaver, serif;
+  font-size: 60px;
+  line-height: 62px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.heropage_HeroSummary .heropage_HeroOneLiner {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #a5e0f3;
+  margin-top: 5px;
+}
+.heropage_HeroSummary .heropage_BioOrSummaryContainer {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  flex-grow: 1;
+  position: relative;
+}
+.heropage_BioOrSummaryContainer .heropage_BioContainer {
+  position: absolute;
+  width: 100%;
+  max-height: 100%;
+  height: 550px;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px 0px 0px;
+  color: #ddd;
+  font-weight: lighter;
+  font-size: 20px;
+  line-height: 122%;
+  overflow-y: scroll;
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+  z-index: 4;
+}
+.heropage_BioOrSummaryContainer .heropage_Hidden {
+  opacity: 0;
+  z-index: 0;
+}
+.heropage_BioOrSummaryContainer .heropage_SummaryContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+}
+.heropage_BioOrSummaryContainer .heropage_SummaryContainer .heropage_Lore {
+  width: 100%;
+  margin-top: 14px;
+  color: #eee;
+  font-weight: 200;
+  font-size: 24px;
+  letter-spacing: 0px;
+}
+.Bold {
+  font-weight: bold;
+}
+.heropage_BioOrSummaryContainer .heropage_ShowBio {
+  margin-top: 8px;
+  color: #8a8a8a;
+  text-decoration: underline;
+  font-size: 18px;
+  cursor: pointer;
+}
+.heropage_BioOrSummaryContainer .heropage_ShowBio:hover {
+  color: #ddd;
+}
+.heropage_BioOrSummaryContainer .heropage_Title {
+  margin-top: 30px;
+  color: #959595;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 17px;
+}
+.heropage_BioOrSummaryContainer .heropage_AttackTypeDetail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 8px;
+}
+.heropage_BioOrSummaryContainer .heropage_AttackTypeDetail .heropage_AttackTypeIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+.heropage_BioOrSummaryContainer .heropage_AttackTypeDetail .heropage_Value {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.heropage_BioOrSummaryContainer .heropage_PipContainer {
+  display: flex;
+  flex-direction: row;
+  width: 80px;
+  justify-content: space-between;
+  margin-top: 8px;
+  margin-left: 4px;
+}
+.heropage_BioOrSummaryContainer .heropage_PipContainer .heropage_DiamondPip {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #fff;
+  transform: rotateZ(45deg);
+}
+.heropage_BioOrSummaryContainer .heropage_PipContainer .heropage_Filled {
+  background-color: #fff;
+}
+
+/* left Side Hero name line */
+.heroPage_UpperSection .heropage_HeroVerticalBar {
+  width: 800px;
+  height: 50px;
+  position: absolute;
+  left: 100px;
+  bottom: 150px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: heropage_verticalBarIn;
+  transform: rotate(270deg);
+  transform-origin: bottom left;
+}
+@keyframes heropage_verticalBarIn {
+  0% {
+    transform: translateY(-90px) rotate(270deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px) rotate(270deg);
+    opacity: 1;
+  }
+}
+.heropage_HeroVerticalBar .heropage_PrimaryStatIcon {
+  width: 22px;
+  height: 22px;
+}
+.heropage_HeroVerticalBar .heropage_HeroName {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: Reaver, serif;
+  font-size: 17px;
+  font-weight: 600;
+  margin-left: 12px;
+}
+.heropage_HeroVerticalBar .heropage_HeroID {
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 18px;
+  margin-left: 10px;
+  transform: translateY(-2px);
+}
+.heropage_HeroVerticalBar .heropage_Line {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #555;
+  margin: 0px 8px 3px 8px;
+}
+
+/* -------------------------------------
+----------------Hero Stats------------- 
+---------------------------------------- */
+.heropage_DetailsBarContainer {
+  width: 100%;
+  height: fit-content;
+  min-height: 221px;
+  background: linear-gradient(80deg, #252728 0%, #101415 100%);
+  border-top: 2px solid #282828;
+  border-bottom: 2px solid #2c2e2e;
+  box-shadow: 0px 0px 8px #000;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+.heropage_DetailsBarContainer .heropage_DetailsBar {
+  width: 100%;
+  max-width: 1600px;
+  padding: 20px 0px;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.heropage_DetailsBarContainer .heropage_DetailsBar .heropage_DetailsAttributes {
+  min-width: 300px;
+  width: 30%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heropage_DetailsBar .heropage_DetailsAttributes .heropage_TopAttributesSection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.heropage_DetailsBar
+  .heropage_DetailsAttributes
+  .heropage_TopAttributesSection
+  .heropage_PortraitContainer {
+  width: 150px;
+  height: 135px;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+.heropage_DetailsBar
+  .heropage_DetailsAttributes
+  .heropage_TopAttributesSection
+  .heropage_PortraitContainer
+  .heropage_Portrait {
+  width: 150px;
+  height: 84px;
+}
+.heropage_DetailsBar
+  .heropage_DetailsAttributes
+  .heropage_TopAttributesSection
+  .heropage_PortraitContainer
+  .heropage_HealthBar {
+  width: 150px;
+  height: 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: linear-gradient(to right, #286323, #7af03c);
+  position: relative;
+}
+.heropage_DetailsBar
+  .heropage_DetailsAttributes
+  .heropage_TopAttributesSection
+  .heropage_PortraitContainer
+  .heropage_BarNumberMajor {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  text-shadow: 1px 1px 2px #000;
+  font-family: Radiance, sans-serif;
+  font-weight: 800;
+}
+.heropage_DetailsBar
+  .heropage_DetailsAttributes
+  .heropage_TopAttributesSection
+  .heropage_PortraitContainer
+  .heropage_BarNumberMinor {
+  color: #286323;
+  flex-grow: 1;
+  text-align: right;
+  font-size: 11px;
+  padding-right: 16px;
+  font-weight: bold;
+}
+.heropage_DetailsBar
+  .heropage_DetailsAttributes
+  .heropage_TopAttributesSection
+  .heropage_PortraitContainer
+  .heropage_ManaBar {
+  width: 150px;
+  height: 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: linear-gradient(to right, #1056db, #73f5fe);
+  position: relative;
+}
+
+.heropage_DetailsBarContainer .heropage_AttributesContainer {
+  width: 100px;
+  height: 120px;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.heropage_DetailsBarContainer .heropage_AttributesContainer .heropage_SingleAttributeContainer {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 4px 0px;
+}
+.heropage_DetailsBarContainer
+  .heropage_AttributesContainer
+  .heropage_SingleAttributeContainer
+  .heropage_AttributeIcon {
+  width: 30px;
+  height: 30px;
+}
+.heropage_DetailsBarContainer
+  .heropage_AttributesContainer
+  .heropage_SingleAttributeContainer
+  .heropage_AttributeValue {
+  color: #fff;
+  font-family: Reaver, serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px #000;
+  margin-left: 12px;
+}
+.heropage_DetailsBarContainer
+  .heropage_AttributesContainer
+  .heropage_SingleAttributeContainer
+  .heropage_AttributeGain {
+  color: #999;
+  font-size: 15px;
+  text-shadow: 1px 1px 2px #000;
+  margin-left: 8px;
+  flex-grow: 1;
+  text-align: right;
+}
+.heropage_DetailsBarContainer .heropage_DetailsSectionHeader {
+  color: #969696;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px #000;
+  margin-top: 12px;
+}
+
+/* heropage_VerticalSeperator */
+.heropage_DetailsBar .heropage_VerticalSeperator {
+  width: 1px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.heropage_DetailsBar .heropage_VerticalSeperator::after {
+  content: '';
+  width: 100%;
+  height: 80%;
+  background-color: #4f4f4f;
+}
+
+/* heropage_DetailsRoles */
+.heropage_DetailsBar .heropage_DetailsRoles {
+  min-width: 250px;
+  width: 30%;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heropage_DetailsRoles .heropage_RolesList {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.heropage_DetailsRoles .heropage_RolesList .heropage_Role {
+  width: 30%;
+  height: 32px;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0px;
+}
+.heropage_RolesList .heropage_RoleName {
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #fff;
+}
+.heropage_RolesList .heropage_BarContainer {
+  width: 100%;
+  height: 6px;
+  max-height: 6px;
+  flex-grow: 1;
+  margin-top: 4px;
+  position: relative;
+}
+.heropage_RolesList .heropage_BarContainer .heropage_BarBackground {
+  width: 100%;
+  height: 100%;
+  background-color: #4c4c4c;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.heropage_RolesList .heropage_BarContainer .heropage_BarFilled {
+  height: 100%;
+  width: 0%;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #427ed1, 0px 0px 10px #427ed1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition-property: width;
+  transition-duration: 5s;
+  transition-delay: 2s;
+}
+
+/* heropage_DetailsStats */
+.heropage_DetailsBar .heropage_DetailsStats {
+  min-width: 400px;
+  width: 30%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heropage_DetailsStats .heropage_StatsList {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.heropage_DetailsStats .heropage_StatsList .heropage_HeroValuesSection {
+  width: 30%;
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+.heropage_DetailsStats .heropage_StatsList .heropage_HeroValuesSection .heropage_HeroValueTitle {
+  margin-left: 8px;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #969696;
+  margin-bottom: 4px;
+}
+.heropage_DetailsStats .heropage_StatsList .heropage_HeroValuesSection .heropage_ValueElement {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 6px;
+  font-size: 16px;
+  text-align: left;
+}
+.heropage_DetailsStats
+  .heropage_StatsList
+  .heropage_HeroValuesSection
+  .heropage_ValueElement
+  .heropage_SwordIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+/* --------------------------------------------
+------------Heroes ability section--------------
+------------------------------------------------ */
+
+.heropage_AbilityContainer {
+  width: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../../assets/images/heroes_page/greyfade.jpg');
+}
+
+.heropage_AbilityContainer .heropage_AbilityDetailsSection {
+  width: 100%;
+  /* min-height: 400px; */
+  padding: 80px 0px;
+  margin-top: -10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.heropage_AbilityContainer .heropage_AbilityDetailsSection .heropage_AbilityDetailsHeader {
+  width: 100%;
+  text-align: center;
+  font-family: Reaver, serif;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+/* Left container */
+
+.heropage_AbilityContainer .heropage_HeroAbilities {
+  width: 100%;
+  max-width: 1500px;
+  min-height: 542px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: -50px;
+  margin-bottom: 200px;
+}
+.heropage_HeroAbilities .heropage_AbilityLeft {
+  width: 60%;
+  /* width: 100%; */
+  margin-right: 20px;
+}
+.heropage_HeroAbilities .heropage_AbilityLeft .heropage_VideoContainer {
+  width: 100%;
+  padding-top: 56.25%;
+  height: 0px;
+  position: relative;
+  box-shadow: 3px 3px 8px #000;
+}
+.heropage_HeroAbilities .heropage_AbilityLeft .heropage_FadeUp {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.heropage_HeroAbilities .heropage_AbilityLeft .heropage_VideoContainer video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.heropage_HeroAbilities .heropage_AbilityLeft .heropage_AbilitySelector {
+  width: 100%;
+  margin-top: -15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 3;
+}
+.heropage_HeroAbilities .heropage_AbilityLeft .heropage_AbilitySelectable {
+  width: 80px;
+  height: 80px;
+  margin: 0px 4px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.1s;
+  box-shadow: 0px 0px 10px #000;
+  position: relative;
+}
+.heropage_HeroAbilities .heropage_AbilityLeft .heropage_NotSelected {
+  filter: saturate(0) brightness(0.6);
+}
+.heropage_HeroAbilities .heropage_AbilityLeft .heropage_Shard,
+.heropage_HeroAbilities .heropage_AbilityLeft .heropage_Scepter {
+  margin-left: 16px;
+}
+.heropage_HeroAbilities .heropage_AbilityLeft .heropage_Shard .heropage_SubIcon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.heropage_HeroAbilities .heropage_AbilityLeft .heropage_Scepter .heropage_SubIcon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+/* Right container */
+
+.heropage_AbilityContainer .heropage_AbilityRight {
+  width: 45%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heropage_AbilityRight .heropage_AbilityInfoContainer {
+  width: 100%;
+  height: 100%;
+}
+.heropage_AbilityRight .heropage_AbilityInfoContainer .heropage_AbilityMain {
+  width: 100%;
+  padding: 8px;
+  background-color: #121212;
+  display: flex;
+  flex-direction: row;
+}
+.heropage_AbilityRight .heropage_AbilityInfoContainer .heropage_AbilityMain .heropage_AbilityImage {
+  width: 96px;
+  height: 96px;
+  margin: 10px 15px 10px 10px;
+  box-shadow: 0px 0px 8px #000;
+}
+.heropage_AbilityRight .heropage_AbilityInfoContainer .heropage_AbilityMain .heropage_AbilityInfo {
+  flex-grow: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-left: 8px;
+  margin-right: 12px;
+  align-items: flex-start;
+}
+.heropage_AbilityRight
+  .heropage_AbilityInfoContainer
+  .heropage_AbilityMain
+  .heropage_AbilityInfo
+  .heropage_AbilityName {
+  color: #fff;
+  font-family: Reaver, serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.heropage_AbilityRight
+  .heropage_AbilityInfoContainer
+  .heropage_AbilityMain
+  .heropage_AbilityInfo
+  .heropage_AbilityDesc {
+  color: #ddd;
+  font-size: 18px;
+  white-space: pre-wrap;
+  margin-bottom: 10px;
+}
+
+.heropage_AbilityRight .heropage_AbilityInfoContainer .heropage_AbilityDetails {
+  width: 100%;
+  background-color: #000;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px 15px 30px;
+}
+.heropage_AbilityDetails .heropage_GenericValues {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.heropage_AbilityDetails .heropage_GenericValues .heropage_Column {
+  width: 50%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heropage_AbilityDetails .heropage_GenericValues .heropage_Column .heropage_DetailsValues {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.heropage_AbilityDetails
+  .heropage_GenericValues
+  .heropage_Column
+  .heropage_DetailsValues
+  .heropage_ValueElement {
+  font-size: 14px;
+  color: #737373;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 4px;
+}
+.heropage_AbilityDetails
+  .heropage_GenericValues
+  .heropage_Column
+  .heropage_DetailsValues
+  .heropage_ValueElement
+  .heropage_ValueValue {
+  margin-left: 4px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0px;
+  text-transform: none;
+}
+.heropage_AbilityDetails .heropage_SpecificValues {
+  width: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.heropage_AbilityDetails .heropage_SpecificValues .heropage_SpecialElement {
+  height: 24px;
+  font-size: 14px;
+  color: #737373;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.heropage_AbilityDetails .heropage_SpecificValues .heropage_SpecialElement .heropage_SpecialValue {
+  margin-left: 4px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0px;
+  text-transform: none;
+}
+.heropage_AbilityDetails .heropage_BottomValues {
+  width: 100%;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.heropage_AbilityDetails .heropage_BottomValues .heropage_CooldownContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.heropage_AbilityDetails .heropage_BottomValues .heropage_CooldownContainer .heropage_CooldownIcon {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.heropage_AbilityDetails .heropage_BottomValues .heropage_CooldownContainer .heropage_CooldownText {
+  margin-left: 8px;
+  color: #fff;
+}
+.heropage_AbilityDetails .heropage_BottomValues .heropage_ManaContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.heropage_AbilityDetails .heropage_BottomValues .heropage_ManaContainer .heropage_ManaIcon {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  background: linear-gradient(#00a4db, #007196);
+}
+.heropage_AbilityDetails .heropage_BottomValues .heropage_ManaContainer .heropage_ManaText {
+  margin-left: 8px;
+  color: #fff;
+}
+.heropage_AbilityDetails .heropage_Lore {
+  width: 100%;
+  background-color: #111;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-style: italic;
+  font-size: 14px;
+  color: #aaa;
+}
+/* -----------------------------------------
+---------------------Bottom navigation--------
+-------------------------------------------- */
+.heropage_BottomSectionHero {
+  width: 100%;
+  height: 150px;
+  background-color: #111;
+  z-index: 1;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.heropage_BottomSectionHero .heropage_BottomSectionHero {
+  width: 45%;
+  height: 150px;
+  position: relative;
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 6px #000;
+  transition-property: filter, transform;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+}
+.heropage_BottomSectionHero .heropage_Left {
+  justify-content: flex-end;
+}
+.heropage_BottomSectionHero .heropage_HeroPortrait {
+  position: absolute;
+  bottom: 1px;
+  width: 400px;
+  right: 0px;
+  transition-duration: 0.3s;
+  overflow: hidden;
+}
+.heropage_BottomSectionHero .heropage_Left:hover .heropage_HeroPortrait {
+  bottom: 10px;
+  filter: brightness(1.2);
+}
+.heropage_BottomSectionHero .heropage_Right:hover .heropage_HeroPortrait {
+  bottom: 10px;
+  filter: brightness(1.2);
+}
+.heropage_BottomSectionHero .heropage_Left .heropage_HeroPortrait {
+  left: 0px;
+}
+.heropage_BottomSectionHero .heropage_HeroLabels {
+  width: 250px;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 6;
+}
+.heropage_BottomSectionHero .heropage_HeroLabels .heropage_TopHeader {
+  font-size: 15px;
+  color: #9f9f9f;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 4px #000;
+  margin-bottom: 5px;
+}
+.heropage_BottomSectionHero .heropage_HeroLabels .heropage_Name {
+  font-size: 28px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: Reaver, serif;
+  font-weight: bold;
+  line-height: 112%;
+  text-shadow: 1px 1px 4px #000;
+}
+.heropage_BottomSectionHero .heropage_HeroLabels .heropage_Details {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.heropage_BottomSectionHero .heropage_HeroLabels .heropage_Details .heropage_PrimaryStatIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  filter: drop-shadow(1px 1px 4px black);
+}
+.heropage_BottomSectionHero .heropage_HeroLabels .heropage_Details .heropage_AttackType {
+  color: #ddd;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 4px #000;
+}
+.heropage_BottomSectionHero.heropage_AllHeroesContainer {
+  width: 10%;
+  height: 150px;
+  padding-top: 30px;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 2px 6px #000;
+  transition-property: filter, transform;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+}
+.heropage_BottomSectionHero .heropage_AllHeroesContainer :hover {
+  filter: brightness(1.6);
+}
+.heropage_BottomSectionHero .heropage_AllHeroesContainer .heropage_Boxes {
+  width: 100px;
+  height: 69px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.heropage_BottomSectionHero .heropage_AllHeroesContainer .heropage_Boxes .heropage_Box {
+  width: 30px;
+  height: 30px;
+  background-color: #9e9fa0;
+}
+.heropage_BottomSectionHero .heropage_AllHeroesContainer .heropage_AllHeroesLabel {
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 8px;
+  text-align: center;
+}

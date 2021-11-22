@@ -1,0 +1,183 @@
+.heroes-page-main-container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 0px 100px 0px 100px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  position: relative;
+  top: -16vh;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgb(79, 82, 102) 0%,
+    rgba(32, 45, 58, 1) 81.3%
+  );
+  padding-top: 30vh;
+}
+
+.herogridpage_Header .herogridpage_Trapezoid {
+  height: 0;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.herogridpage_TitleText {
+  color: #fff;
+  font-size: 3.5rem;
+  font-family: Reaver, serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 112%;
+}
+
+.herogridpage_SubtitleText {
+  width: 100%;
+  max-width: 100vw;
+  margin: 0px auto;
+  color: #ddd;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+/* Filter Section */
+.herogridpage_FilterContainer {
+  width: 80vw;
+  max-width: 1200px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #11111190;
+  box-shadow: 0px 0px 30px #00000050;
+  margin-top: 20px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+}
+
+.herogridpage_FilterContainer .herogridpage_FilterLabel {
+  display: none;
+  color: #fff;
+  width: 180px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.herogridpage_FilterContainer .herogridpage_SpecificFilterContainer {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20px;
+}
+.herogridpage_FilterContainer .herogridpage_SpecificFilterContainer .herogridpage_SelectorLabel {
+  color: #808fa6;
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 20px;
+}
+.herogridpage_Filter {
+  width: 43px;
+  height: 35px;
+  margin-left: -4px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition-property: filter;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  color: #fff;
+  filter: brightness(0.5) saturate(0);
+}
+.herogridpage_SpecificFilterContainer .selected {
+  filter: brightness(1) saturate(1);
+}
+
+.herogridpage_SearchBarContainer {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+.herogridpage_SearchBarContainer .herogridpage_SearchBar {
+  max-width: 250px;
+  height: 50px;
+  background-color: #25282a;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.herogridpage_SearchBarContainer .herogridpage_SearchBar .herogridpage_MagnifyingGlass {
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+  min-height: 26px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.herogridpage_SearchBarContainer .herogridpage_SearchBar form {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+.herogridpage_SearchBarContainer .herogridpage_SearchBar form input {
+  height: 30px;
+  width: 100%;
+  border: 0px solid transparent;
+  background-color: #25282a;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 4px;
+}
+.herogridpage_SearchBarContainer .herogridpage_SearchBar form input:focus {
+  background-color: #505050;
+}
+
+/* Heros Grid */
+
+.herogridpage_GridList {
+  width: 80vw;
+  min-height: 45vh;
+  margin-top: 15px;
+  transition-property: height;
+  transition-timing-function: ease-out;
+  transition-duration: 0.2s;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.1s;
+  animation-iteration-count: 1;
+  animation-name: herogridpage_gridIn_NeQOP;
+  /* position: relative; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+@keyframes herogridpage_gridIn_NeQOP {
+  0% {
+    transform: translateY(90px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,92 @@
+.herogridpage_HeroIcon {
+  width: 215px;
+  height: 127px;
+  margin: 0px 15px 20px 15px;
+  box-shadow: 1px 1px 4px #000;
+  filter: saturate(0.8);
+  transition-property: transform, box-shadow, background-size, opacity, top, left;
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+  background-position: center;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  cursor: pointer;
+}
+.herogridpage_HeroIcon:hover {
+  transform: scale(1.4);
+  box-shadow: 3px 3px 8px #000;
+  background-size: 100%;
+  filter: saturate(1);
+  z-index: 4;
+}
+.herogridpage_HeroIcon .herogridpage_HeroNameContainer {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition-property: opacity, bottom;
+  transition-timing-function: ease-out;
+  transition-duration: 0.2s;
+  z-index: 3;
+  opacity: 0;
+}
+.herogridpage_HeroIcon:hover .herogridpage_HeroNameContainer {
+  opacity: 1;
+  bottom: 0px;
+}
+.herogridpage_HeroIcon .herogridpage_HeroNameContainer .herogridpage_PrimaryStatIcon {
+  width: 2.8rem;
+  height: 2.8rem;
+  padding: 8px;
+  filter: drop-shadow(0px 0px 4px black);
+}
+.herogridpage_HeroIcon .herogridpage_HeroNameContainer .herogridpage_HeroName {
+  font-size: 18px;
+  line-height: 20px;
+  font-family: 'Reaver', serif;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px;
+  padding-left: 0px;
+  text-shadow: 0px 0px 4px #000;
+}
+
+.herogridpage_HeroIcon .herogridpage_FadeContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition-property: opacity, bottom;
+  transition-timing-function: ease-out;
+  transition-duration: 0.2s;
+  opacity: 0;
+}
+.herogridpage_HeroIcon:hover .herogridpage_FadeContainer {
+  opacity: 1;
+}
+.herogridpage_HeroIcon .herogridpage_FadeContainer .fade_FadeContainer {
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+  background: none;
+}
+.herogridpage_FadeContainer .fade_FadeContainer .fade_Fade {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.733) 75%,
+    rgb(0, 0, 0) 100%
+  ) !important;
+}
